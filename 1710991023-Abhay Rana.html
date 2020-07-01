@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    body {
+        background-image:
+  linear-gradient(to bottom, rgba(255,255,0,0.5), rgba(0,0,255,0.5)),
+  url('https://mdn.mozillademos.org/files/7693/catfront.png');
+}
+ .navbar {
+  
+  background-color: #333;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  
+}
+
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropup {
+  position: relative;
+  display: inline-block;
+}
+
+.dropup-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  bottom: 50px;
+  z-index: 1;
+}
+
+.dropup-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropup-content a:hover {background-color: #ccc}
+
+.dropup:hover .dropup-content {
+  display: block;
+}
+
+.dropup:hover .dropbtn {
+  background-color: #2980B9;
+}
+
+
+
+
+
+
+</style>
+</head>
+<body>
+
+
+
+<div class="navbar">
+<div class="dropup">
+  <button class="dropbtn">Compare prices    <i class='fas fa-balance-scale' style='font-size:36px'></i></button>
+  <div class="dropup-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
+<div class="dropup">
+    <button class="dropbtn">Deals        <i class='fas fa-bullhorn' style='font-size:36px'></i></button>
+    <div class="dropup-content">
+      <a href="#" >DEAL 1 <br>   <button onclick="myyFunction()">Proceed</button> <br> NOKIA1000</a>
+      <a href="#" >DEAL 2  <br><button onclick="myyFunction()">Proceed</button> <br>  SAMSUNG NOTE </a>
+      <a href="#" >DEAL 3  <br><button onclick="myyFunction()">Proceed</button> <br>  ONE PLUS 7 PRO </a>
+    </div>
+  </div>
+  <div class="dropup">
+    <button class="dropbtn">Coupons     <i class='fas fa-money-bill-wave' style='font-size:36px'></i></button>
+    <div class="dropup-content">
+      <a href="#" id="myInput" value="f356o591  ">f356o591     <br>  20% OFF  <button onclick="myFunction()">Copy text</button> <i class="fa fa-clipboard"></i></a>
+      <a href="#" id="myInput" value="56ghtQW2 ">56ghtQW2   <br>  50% OFF <button onclick="myFunction()">Copy text</button> <i class="fa fa-clipboard"></i></a>
+      <a href="#" id="myInput" value="thqWQ321G">thqWQ321G  <br>  10% OFF  <button onclick="myFunction()">Copy text</button> <i class="fa fa-clipboard"></i></a>
+      <a href="#" id="myInput" value="thqWQ321G ">thqWQ321G  <br>  10% OFF  <button onclick="myFunction()">Copy text</button> <i class="fa fa-clipboard"></i></a>
+      <a href="#" id="myInput" value="thqWQ321G ">f356o591    <br> 15% OFF  <button onclick="myFunction()">Copy text</button> <i class="fa fa-clipboard"></i></a>
+      <a href="#" id="myInput" value="56ghtQW2 ">56ghtQW2   <br>  25% OFF <button onclick="myFunction()">Copy text</button><i class="fa fa-clipboard"></i></a>
+      <a href="#" id="myInput" value="thqWQ321G">thqWQ321G   <br> 30% OFF  <button onclick="myFunction()">Copy text</button> <i class="fa fa-clipboard"></i></a>
+      <a href="#" id="myInput" value="f356o591 ">f356o591   <br>  40% OFF  <button onclick="myFunction()">Copy text</button>  <i class="fa fa-clipboard"></i></a>
+      <a href="#" id="myInput" value="56ghtQW2">56ghtQW2   <br>  55% OFF <button onclick="myFunction()">Copy text</button> <i class="fa fa-clipboard"></i></a>
+      <a href="#" id="myInput" value="thqWQ321G ">thqWQ321G   <br> 60% OFF <button onclick="myFunction()">Copy text</button>  <i class="fa fa-clipboard"></i></a>
+      <a href="#" id="myInput" value="f356o591 ">f356o591   <br>  30% OFF <button onclick="myFunction()">Copy text</button>  <i class="fa fa-clipboard"></i></a>
+      <a href="#" id="myInput" value="56ghtQW2  ">56ghtQW2   <br>  30% OFF <button onclick="myFunction()">Copy text</button> <i class="fa fa-clipboard"></i></a>
+      <a href="#" id="myInput" value="thqWQ321G ">thqWQ321G  <br>  20% OFF <button onclick="myFunction()">Copy text</button>  <i class="fa fa-clipboard"></i></a>
+    </div>
+  </div>
+  </div>
+  <script>
+    function myFunction() {
+      var copyText = document.getElementById("myInput");
+      copyText.select();
+      copyText.setSelectionRange(0, 99999)
+      document.execCommand("copy");
+      alert("Copied the text: " + copyText.value);
+    }
+    function myyFunction() {
+  location.replace("https://www.flipkart.com")
+}
+    </script>
+
+</body>
+</html>
+
